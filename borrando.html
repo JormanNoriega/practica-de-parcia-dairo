@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página de Carga</title>
+    <link rel="stylesheet" href="styles carga.css" />
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+      <p class="loader-text" id="loaderText">Cargando...</p>
+    </div>
+
+    <script>
+      // Espera a que la página se cargue completamente antes de ejecutar el script
+      document.addEventListener("DOMContentLoaded", function () {
+        const loaderText = localStorage.getItem("loaderText") || "Cargando...";
+        document.getElementById("loaderText").textContent = loaderText;
+      });
+    </script>
+  </body>
+</html>

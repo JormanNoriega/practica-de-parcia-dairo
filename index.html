@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Móvil</title>
+    <link rel="stylesheet" href="styles app.css" />
+  </head>
+  <body>
+    <header>
+      <h1>KODA</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section id="about" class="about">
+      <div class="about-item">
+        <div>
+          <div id="servicios" class="card">
+            <h2>BORRAR</h2>
+            <p>
+              Te ofrecemos la posibilidad de eliminar ciertas características de
+              tu persona para poder seguir adelante.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Sección de banners -->
+      <div class="banners">
+        <div class="banner banner-recu">
+          <a href="borrando.html" onclick="setLoaderText('Borrando recuerdos')"
+            >RECUERDOS</a
+          >
+        </div>
+        <div class="banner banner-recu">
+          <a href="borrando.html" onclick="setLoaderText('Borrando emociones')"
+            >EMOCIONES</a
+          >
+        </div>
+        <div class="banner">
+          <a href="borrando.html" onclick="setLoaderText('Borrando acciones')"
+            >ACCIONES</a
+          >
+        </div>
+        <div class="banner">
+          <a href="borrando.html" onclick="setLoaderText('Borrando razonamiento')"
+            >RAZONAMIENTO</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 KODA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+      function setLoaderText(text) {
+        localStorage.setItem("loaderText", text);
+      }
+    </script>
+  </body>
+</html>
