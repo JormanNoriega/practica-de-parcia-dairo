@@ -64,7 +64,7 @@ nav a {
 }
 
 /* Estilos adicionales para el banner "RECUERDOS" */
-.banner a {
+.banner a{
   display: block; /* Hace que el enlace ocupe todo el recuadro */
   width: 100%;
   height: 100%;
@@ -73,6 +73,10 @@ nav a {
   font-weight: bold;
   padding: 15px; /* Padding más pequeño */
   border-radius: 10px;
+}
+
+.banner p {
+  margin: 10px 0;
 }
 
 .banner-recu {
@@ -149,65 +153,3 @@ footer {
   color: #333;
 }
 
-/* Main Section */
-#servicios {
-  padding: 40px 20px;
-  text-align: center; /* Centrar el texto en general */
-}
-
-#servicios h2 {
-  font-size: 32px;
-  color: #007bff;
-  margin-bottom: 20px;
-}
-
-#servicios p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-/* Grid centrado con 2 columnas en pantallas grandes y 1 columna en pantallas pequeñas */
-.servicios-grid {
-  display: grid;
-  grid-template-columns: 1fr; /* 1 columna por defecto */
-  gap: 20px;
-  max-width: 600px; /* Ancho máximo para centrar en pantallas grandes */
-  margin: 0 auto; /* Centrar horizontalmente el grid */
-}
-
-/* 2 columnas en pantallas medianas y grandes */
-@media (min-width: 600px) {
-  .servicios-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* Servicio Cards */
-.servicio {
-  background-color: #0056b3;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.servicio:hover {
-  transform: translateY(-10px);
-}
-
-.servicio h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.servicio p {
-  font-size: 16px;
-  color: #e0e0e0;
-}
-
-#servicios p {
-  color: white;
-  text-decoration: none;
-}
