@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <title>Página de Carga</title>
-    <link rel="stylesheet" href="styles carga.css" />
+    <link rel="stylesheet" href="styles app.css" />
   </head>
   <body>
+    <header>
+      <h1>KODA</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
     <div class="loader-container">
       <div class="loader"></div>
       <p class="loader-text" id="loaderText">Cargando...</p>
@@ -18,5 +26,9 @@
         document.getElementById("loaderText").textContent = loaderText;
       });
     </script>
+
+    <footer>
+      <p>&copy; 2024 KODA. Todos los derechos reservados.</p>
+    </footer>
   </body>
 </html>
