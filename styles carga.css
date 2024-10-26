@@ -26,7 +26,6 @@ body {
   border-top: 8px solid #007bff; /* Color de la barra de progreso */
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1)); /* Sombra suave */
 }
 
 @keyframes spin {
